@@ -1,0 +1,38 @@
+<div class="page-content" *ngIf="!loading">
+    <app-bunner></app-bunner>
+    <div class="container">
+        <div class="all-product">
+            <div class="row ">
+                <div class="col-xl-4 col-md-4 col-sm-12">
+                    <div class="title">
+                        <span class="fz-16 fw-400 ">منتجات تصفحتها مؤخرا</span>
+                    </div>
+                    <div class="sec-recently-view" *ngFor="let item of listRecntly | slice:1:4">
+                        <app-product-recently-view [data]="item"></app-product-recently-view>
+
+                    </div>
+                </div>
+                <div class="col-xl-8 col-md-8 col-sm12">
+                    <div class="title-more">
+                        <div class="title">
+                            <span class="fz-16 fw-400 "> وصل حديثا </span>
+                        </div>
+                        <div class="see-all">
+                            <a routerLink="/ProductCategory">  عرض الكل </a>
+                        </div>
+                    </div>
+                    <div class="all-product-card">
+                        <div class="sec-product-card" *ngFor="let item of listRecntly ">
+                            <app-products-card [data]="item"></app-products-card>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center w-100" *ngIf="loading">
+    <app-spinner></app-spinner>
+</div>

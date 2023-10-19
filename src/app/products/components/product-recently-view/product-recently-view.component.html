@@ -1,0 +1,38 @@
+<div class="card-details">
+    <div class="card-img">
+        <img src="{{data.image}}" alt="">
+        <span class="compar-img">
+          <img src="assets/compare_arrows_black_24dp.svg" alt="">
+          <em class="add-to-compar">أضف للمقارنة</em>
+        </span>
+        <div class="offers" *ngIf="data.id==2">
+            <em class="offer-new">جديد</em>
+        </div>
+        <div class="offers the-offer" *ngIf="data.id==3">
+            <em class="offer-new">عرض</em>
+        </div>
+    </div>
+    <div class="details-shop">
+        <div class="title">
+            <h3>تيشيرت-كم طويل-آرت وير-نسائي-ملابس</h3>
+        </div>
+        <div class="price">
+            <em class="last-order" *ngIf="data.id==2">150.00 <em>ج.م</em></em>
+            <span>{{data.price}} <em>ج.م</em></span>
+        </div>
+        <div class="more-details">
+            <div class="ad-to-cart">
+                <img src="assets/add_shopping_cart-black-18dp.svg" alt="">
+            </div>
+            <div class="auther-details">
+                <div class="add-wishlist">
+                    <i class="fa-regular fa-heart "></i>
+                </div>
+                <span class="w-15-"></span>
+                <div class="share-btn">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

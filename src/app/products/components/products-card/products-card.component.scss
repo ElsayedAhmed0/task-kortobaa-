@@ -1,0 +1,132 @@
+$color_1: #FFFFFF;
+$color_2: #fff;
+$color_3: #032326;
+$color_4: #23104e;
+$color_5: #adb7b8;
+$color_6: #23104E;
+.card-details {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    margin: 15px 0;
+    display: block;
+}
+
+.all-product {
+    padding: 20px 0;
+}
+
+.card-img {
+    width: 100%;
+    position: relative;
+    height: 260px;
+    >img {
+        height: 100%;
+        padding: 10px;
+    }
+}
+
+.details-shop {
+    position: relative;
+    width: 100%;
+}
+
+span.compar-img {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+em.add-to-compar {
+    background: $color_6;
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 2px 5px;
+    z-index: 2;
+    position: absolute;
+    width: max-content;
+    right: 0;
+    top: -15px;
+    color: $color_2;
+    opacity: 0;
+    visibility: hidden;
+}
+
+span.compar-img:hover .add-to-compar {
+    opacity: 1;
+    visibility: visible;
+}
+
+.offers {
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    background: $color_6;
+    padding: 5px 13px;
+    border-radius: 16px;
+    color: $color_1;
+    em.offer-new {
+        color: $color_2;
+        font-size: 14px;
+    }
+}
+
+.title {
+    h3 {
+        font-size: 18px;
+        padding: 10px 10px 5px 10px;
+        color: #032326;
+        margin-bottom: 0;
+        line-height: 20px;
+    }
+}
+
+em.last-order {
+    color: $color_4 !important;
+    display: block;
+    font-size: 14px;
+    text-decoration: line-through;
+    opacity: .3;
+}
+
+.more-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px 5px 10px;
+}
+
+.auther-details {
+    display: flex;
+    >div {
+        color: $color_5;
+        cursor: pointer;
+    }
+}
+
+.ad-to-cart {
+    cursor: pointer;
+    background: #302CA2;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 6px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    span {
+        color: $color_6;
+        font-weight: 700;
+    }
+    padding: 5px 10px 5px 10px;
+    height: 60px;
+    vertical-align: bottom;
+    display: table-cell;
+}
+
+.offers.the-offer {
+    background: #26A37C;
+}

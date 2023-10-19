@@ -1,0 +1,14 @@
+<section class="all-product-cat" *ngIf="!loading">
+    <div class="container">
+        <div class="row">
+            <div class="col-3" *ngFor="let item of listRecntly">
+                <div class="sec-product-card">
+                    <app-products-card [data]="item"></app-products-card>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="text-center w-100" *ngIf="loading">
+    <app-spinner></app-spinner>
+</div>

@@ -1,0 +1,83 @@
+<header class="heder-bar">
+    <div class="on-web">
+        <section class="the-header">
+            <div class="header-section">
+                <div class="logo">
+                    <a href="#">
+                        <img src="assets/Path 224.png" loading="lazy" alt="k-shop">
+                    </a>
+                </div>
+                <span class="w-20-"></span>
+                <div class="info-bar">
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="عم تبحث ؟">
+                    </div>
+                    <span class="w-20-"></span>
+                    <div class="auth-sec">
+                        <div class="log-in">
+                            <img src="assets/person-24px.svg" loading="lazy" alt="login">
+                        </div>
+                        <span class="w-10-"></span>
+                        <div class="wishlish">
+                            <!-- <img src="assets/Component 2 – 3.svg" loading="lazy" alt="wishlish"> -->
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <span class="w-10-"></span>
+                        <div class="cart-sec">
+                            <div class="add-to-cart" routerLink="/carts">
+                                <span>سلة التسوق</span>
+                                <img src="assets/shopping_cart-24px.svg" loading="lazy" alt="shoping">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sub-header">
+            <div class="nav-bar">
+                <ul class="nav-list">
+                    <li>الأقسام <i class="fa-solid fa-chevron-down"></i></li>
+                    <li>الرئيسية</li>
+                    <li>قائمة الأمنيات</li>
+                    <li>تواصل معنا</li>
+                    <li>من نحن</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div class="on-mob">
+        <div class="header-mob">
+
+            <div class="bar-menu">
+                <div class="bar-icon" (click)="clickEvent()"><i class="fa-solid fa-bars"></i></div>
+                <div class="list-menu" [ngClass]="status ? 'active' : ''">
+                    <div class="header-content">
+                        <div class="close-menu" (click)="clickEvent()">
+                            <i class="fa-regular fa-circle-xmark"></i>
+                        </div>
+                        <ul>
+                            <li>الأقسام <i class="fa-solid fa-chevron-down"></i></li>
+                            <li>الرئيسية</li>
+                            <li>قائمة الأمنيات</li>
+                            <li>تواصل معنا</li>
+                            <li>من نحن</li>
+                            <li>
+                                <div class="add-to-cart" routerLink="/carts">
+                                    <span>سلة التسوق</span>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/Path 224.png" loading="lazy" alt="k-shop">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="fk-height"></div>

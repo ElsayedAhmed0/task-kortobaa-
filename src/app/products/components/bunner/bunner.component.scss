@@ -1,0 +1,15 @@
+.carousel-item {
+    height: 360px;
+}
+
+.carousel-item img {
+    height: 360px;
+}
+
+button.carousel-control-next,
+button.carousel-control-prev {
+    width: 60px;
+    height: 60px;
+    background: #a494e4;
+    top: calc(50% - 0px);
+}
